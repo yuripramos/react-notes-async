@@ -21,7 +21,7 @@ model User {
   createdAt     DateTime    @default(now())
   role          Role        @default(BASIC)
   messages      Message[]
-  Countries     Countries[]
+  countries     Countries[]
   favoritePosts Post[]      @relation("FavoritePosts")
   writtenPosts  Post[]      @relation("WrittenPosts")
 }
